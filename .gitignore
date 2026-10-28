@@ -1,0 +1,7 @@
+# Build output (python build.py) - the exe is published as a GitHub Release, not committed
+build/
+dist/
+*.spec
+
+__pycache__/
+*.pyc
