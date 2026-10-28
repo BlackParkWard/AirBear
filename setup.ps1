@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# (This build script for UxPlay is GPL-licensed; the rest of AirBear is not. See LICENSE.md.)
+#
 # AirBear setup: installs MSYS2 (if needed), then builds and installs the UxPlay
 # AirPlay receiver plus the GStreamer plugins it needs for video/audio playback.
 # Run from PowerShell:  powershell -ExecutionPolicy Bypass -File setup.ps1

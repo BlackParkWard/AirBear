@@ -24,7 +24,7 @@ APP_NAME = "AirBear"
 HERE = Path(__file__).resolve().parent
 FROZEN = getattr(sys, "frozen", False)  # running as the single-file AirBear.exe
 BUNDLE = Path(getattr(sys, "_MEIPASS", HERE))  # where PyInstaller unpacked our data files
-ASSETS = BUNDLE  # logo.png (bear), LogoUpdate.png (wordmark)
+ASSETS = BUNDLE / "assets"  # logo.png (bear), LogoUpdate.png (wordmark)
 SETTINGS_FILE = Path(os.environ.get("APPDATA", HERE)) / APP_NAME / "settings.json"
 # The exe carries UxPlay + GStreamer as backend.zip and unpacks it here once per version.
 # A fixed location (not PyInstaller's per-run temp dir) keeps the firewall rule valid.

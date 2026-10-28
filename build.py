@@ -84,7 +84,7 @@ def pack():
 def make_icon():
     """logo.png, cropped to the bear and centred on a square transparent canvas."""
     from PIL import Image
-    img = Image.open(HERE / "logo.png").convert("RGBA")
+    img = Image.open(HERE / "assets" / "logo.png").convert("RGBA")
     img = img.crop(img.getchannel("A").getbbox())
     side = max(img.size)
     square = Image.new("RGBA", (side, side))
@@ -106,8 +106,7 @@ def main():
         "--name", "AirBear", "--icon", str(icon),
         "--add-data", f"{archive}{sep}.",
         "--add-data", f"{BUILD / 'backend.version'}{sep}.",
-        "--add-data", f"{HERE / 'logo.png'}{sep}.",
-        "--add-data", f"{HERE / 'LogoUpdate.png'}{sep}.",
+        "--add-data", f"{HERE / 'assets'}{sep}assets",
         "--distpath", str(HERE / "dist"), "--workpath", str(BUILD / "pyinstaller"),
         "--specpath", str(BUILD),
         str(HERE / "airbear.pyw"),

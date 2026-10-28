@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="logo.png" width="160" alt="AirBear bear logo"><br>
-  <img src="LogoUpdate.png" width="240" alt="AirBear">
+  <img src="assets/logo.png" width="160" alt="AirBear bear logo"><br>
+  <img src="assets/LogoUpdate.png" width="240" alt="AirBear">
 </p>
 
 <p align="center"><b>Mirror your iPhone or iPad screen to a Windows PC using the built-in Screen Mirroring button.</b><br>
@@ -139,7 +139,7 @@ This produces `dist\AirBear.exe`. It contains the GUI, UxPlay, and only the GStr
 | `airbear.pyw` | The app: tkinter GUI, runs and monitors UxPlay, firewall setup |
 | `setup.ps1` | Developer setup: MSYS2 + GStreamer, builds UxPlay |
 | `build.py` | Bundles UxPlay + GStreamer and packages `AirBear.exe` with PyInstaller |
-| `logo.png`, `LogoUpdate.png` | App icon / bear logo and wordmark |
+| `assets/` | `logo.png` (app icon / bear logo) and `LogoUpdate.png` (wordmark) |
 
 ## How it works
 
@@ -151,6 +151,8 @@ iOS Screen Mirroring uses Apple's AirPlay protocol. AirBear is a front end for *
 
 ## License
 
-AirBear bundles UxPlay (GPL-3.0) and GStreamer/FFmpeg components (LGPL/GPL). If you redistribute `AirBear.exe`, you must comply with those licenses, including offering the corresponding source code. The UxPlay license is included in the bundle as `UXPLAY-LICENSE.txt`.
+AirBear is **source-available** under the [PolyForm Strict License 1.0.0](LICENSES/PolyForm-Strict-1.0.0.md). You're welcome to read the code, and to download and use AirBear for any noncommercial purpose. You may **not** redistribute AirBear or publish modified versions of it. Please link people to this repository instead.
+
+Third-party components bundled in `AirBear.exe` (UxPlay, GStreamer, FFmpeg and others) remain under their own open-source licenses, and `setup.ps1` is GPL-3.0. See [LICENSE.md](LICENSE.md) for the details.
 
 AirPlay, iPhone and iPad are trademarks of Apple Inc. AirBear is not affiliated with or endorsed by Apple.
